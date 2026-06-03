@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg \
     init.gsi.rc
 
+# GameBar Performance Overlay
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
 # Partitions
 PRODUCT_BUILD_BOOT_IMAGE := false
 PRODUCT_BUILD_CACHE_IMAGE := false
